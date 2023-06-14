@@ -1,2 +1,2 @@
 # RetrofitExample
-Retrofit-Hilt-Coroutine-MVVM-JetpackCompose
+Retrofit-Hilt-Coroutine-Flow-MVVM-JetpackCompose
