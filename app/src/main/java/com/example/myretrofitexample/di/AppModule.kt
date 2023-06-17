@@ -18,16 +18,16 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun getRetrofitServiceInstance(retrofit: Retrofit): ApiCountry {
-        return retrofit.create(ApiCountry::class.java)
-    }
+    fun getRetrofitServiceInstance(retrofit: Retrofit): ApiCountry =
+        retrofit.create(ApiCountry::class.java)
+
 
     @Singleton
     @Provides
-    fun getRetrofitInstance(url: String): Retrofit {
-        return Retrofit.Builder()
+    fun getRetrofitInstance(url: String): Retrofit =
+        Retrofit.Builder()
             .baseUrl(url)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-    }
+
 }
